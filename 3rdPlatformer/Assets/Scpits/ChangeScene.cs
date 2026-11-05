@@ -29,6 +29,7 @@ public class ChangeScene : MonoBehaviour
 
     public void StartSceneLoad(string _sceneName)
     {
-        SceneManager.LoadScene(sceneName);
+        Debug.Log("StartSceneLoad");
+        SceneManager.LoadScene(_sceneName);
     }
 }

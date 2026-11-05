@@ -9,7 +9,7 @@ public class CollisonEvent : MonoBehaviour
     public bool canBeFiredAgain = false;
     private bool m_eventFired = false;
 
-    private void OnTiggerEnter(Collider _collider)
+    private void OnTriggerEnter(Collider _collider)
     {
         if (_collider.tag != targetTag)
             return;

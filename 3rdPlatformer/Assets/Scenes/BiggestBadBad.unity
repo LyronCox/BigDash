@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &3302155
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   walkForce: 10
-  jumpForce: 10
+  jumpForce: 8
   maxJumpCount: 2
   JumpCounter: 0
   lookspeed: 20
@@ -797,6 +797,17 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &374247369 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8742554586124127500, guid: dc9278068a86cec2d841468ef2b4c26e, type: 3}
+  m_PrefabInstance: {fileID: 931238185}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62404bd92ff0fc645a7c8c2815cc3862, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChangeScene
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1231,7 +1242,7 @@ MonoBehaviour:
   onTriggerEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3302161}
+      - m_Target: {fileID: 374247369}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: StartSceneLoad
         m_Mode: 5
@@ -1240,7 +1251,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: BiggestBadBad
           m_BoolArgument: 0
         m_CallState: 2
   targetTag: Player
@@ -1609,6 +1620,71 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &931238185
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1598423022267321453, guid: dc9278068a86cec2d841468ef2b4c26e, type: 3}
+      propertyPath: m_Name
+      value: Player (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080391470975605722, guid: dc9278068a86cec2d841468ef2b4c26e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 66.08395
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080391470975605722, guid: dc9278068a86cec2d841468ef2b4c26e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 51.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080391470975605722, guid: dc9278068a86cec2d841468ef2b4c26e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 79.663086
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080391470975605722, guid: dc9278068a86cec2d841468ef2b4c26e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080391470975605722, guid: dc9278068a86cec2d841468ef2b4c26e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080391470975605722, guid: dc9278068a86cec2d841468ef2b4c26e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080391470975605722, guid: dc9278068a86cec2d841468ef2b4c26e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080391470975605722, guid: dc9278068a86cec2d841468ef2b4c26e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080391470975605722, guid: dc9278068a86cec2d841468ef2b4c26e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080391470975605722, guid: dc9278068a86cec2d841468ef2b4c26e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5033908913861695695, guid: dc9278068a86cec2d841468ef2b4c26e, type: 3}
+      propertyPath: jumpForce
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742554586124127500, guid: dc9278068a86cec2d841468ef2b4c26e, type: 3}
+      propertyPath: sceneName
+      value: BiggestBadBad
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dc9278068a86cec2d841468ef2b4c26e, type: 3}
 --- !u!1 &1074388865
 GameObject:
   m_ObjectHideFlags: 0
@@ -2406,4 +2482,5 @@ SceneRoots:
   - {fileID: 677621982}
   - {fileID: 1761129944}
   - {fileID: 1074388868}
+  - {fileID: 931238185}
   - {fileID: 300858443}
